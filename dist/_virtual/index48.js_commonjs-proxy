@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var index = require('../node_modules/merge-descriptors/index.js');
+var index = require('../node_modules/compression/node_modules/bytes/index.js');
 
 
 

@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var utils = require('../node_modules/express/node_modules/qs/lib/utils.js');
+var utils = require('../node_modules/express/lib/utils.js');
 
 
 

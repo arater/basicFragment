@@ -28,9 +28,7 @@ var devMiddleware = function devMiddleware(req, res, next) {
       switch (_a.label) {
         case 0:
           res.setHeader('Content-Type', 'text/html; charset=utf-8');
-          initialState = config.default.extract(); // initialState = initialState.ROOT_QUERY;
-
-          console.log('extract', initialState);
+          initialState = config.default.extract();
 
           if (req.query.env) {
             envConfig = void 0;
@@ -51,7 +49,6 @@ var devMiddleware = function devMiddleware(req, res, next) {
               }
 
               initialState.ROOT_QUERY.process = 'DEV';
-              console.log('root', initialState);
             }
           }
 
@@ -60,14 +57,12 @@ var devMiddleware = function devMiddleware(req, res, next) {
             client: config.default
           }, /*#__PURE__*/React__default.createElement(reactRouterDom.StaticRouter, {
             location: req.url
-          }, /*#__PURE__*/React__default.createElement(App.default, null))); // Apollo initial state
-
+          }, /*#__PURE__*/React__default.createElement(App.default, null)));
           return [4
           /*yield*/
           , reactSsr.getDataFromTree(Markup)];
 
         case 1:
-          // Apollo initial state
           _a.sent();
 
           try {

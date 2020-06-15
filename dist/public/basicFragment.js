@@ -53693,7 +53693,6 @@ var templateObject_1$2;var Counter = function Counter() {
       error = _a.error;
 
   var configData = useQuery(GET_CONFIG).data;
-  console.log('data', configData);
 
   var _b = react.useState(null),
       setErrorCatch = _b[1];
@@ -54232,7 +54231,7 @@ var SelectPanel = function SelectPanel(props) {
     "aria-describedby": getString("search", overrideStrings),
     onChange: handleSearchChange,
     onFocus: handleSearchFocus
-  })), hasSelectAll && react.createElement(SelectItem, {
+  })), hasSelectAll && !searchText && react.createElement(SelectItem, {
     focused: focusIndex === 0,
     checked: selectAllLength === value.length,
     option: selectAllOption,

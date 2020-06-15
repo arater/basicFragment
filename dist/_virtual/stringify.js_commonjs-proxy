@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var stringify = require('../node_modules/body-parser/node_modules/qs/lib/stringify.js');
+var stringify = require('../node_modules/qs/lib/stringify.js');
 
 
 
